@@ -1,2 +1,1 @@
-# getting-started-repo
-A repository for use with the "Getting Started" documentation.
+A repository for use with GoCD's "Getting Started" documentation.
