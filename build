@@ -12,7 +12,7 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
-cat >my-artifact <<EOF
+cat >my-artifact.txt <<EOF
 ==== ==== ====
 An example artifact, created on: $(date)
 
