@@ -11,3 +11,12 @@ while [ "$count" -lt 20 ]; do
 
     sleep 1
 done
+
+cat >my-artifact <<EOF
+==== ==== ====
+An example artifact, created on: $(date)
+
+Pipeline which created it: $GO_PIPELINE_NAME
+Pipeline counter was: $GO_PIPELINE_COUNTER
+==== ==== ====
+EOF
