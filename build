@@ -12,7 +12,8 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
-cat >my-artifact.html <<EOF
+cat >my-artifact.html
+cp my-artifact.html  my-artifact2.html<<EOF
 <html>
 <body>
 <h3>An example artifact</h3>
