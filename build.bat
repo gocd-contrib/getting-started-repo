@@ -22,4 +22,4 @@ FOR /l %%A in (1, 1, 20) DO (
   ECHO ^</pre^>
   ECHO ^<body^>
   ECHO ^</html^>
-) >my-artifact.html
+) >test-artifact.html
