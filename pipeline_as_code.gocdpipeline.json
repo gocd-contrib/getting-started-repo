@@ -1,0 +1,60 @@
+{
+    "format_version" : 3,
+    "name":"config-repo-pipeline",
+    "environment_variables":[
+ 
+    ],
+    "group":"pipeline-as-code",
+    "materials":[
+       {
+          "type":"git",
+          "url":"https://github.com/gocd-contrib/getting-started-repo",
+          "name":"material-name",
+          "destination":"dest"
+       }
+    ],
+    "stages":[
+       {
+          "name":"defaultStage",
+          "fetch_materials":true,
+          "never_cleanup_artifacts":false,
+          "clean_working_directory":false,
+          "environment_variables":[
+ 
+          ],
+          "jobs":[
+             {
+                "name":"build",
+                "environment_variables":[
+ 
+                ],
+                "tabs":[
+ 
+                ],
+                "resources":[
+ 
+                ],
+                "artifacts":[
+ 
+                ],
+                "properties":[
+ 
+                ],
+                "run_instance_count":null,
+                "timeout":0,
+                "tasks":[
+                   {
+                      "type":"exec",
+                      "run_if":"passed",
+                      "on_cancel":null,
+                      "command":"./build",
+                      "arguments":[
+                      ],
+                      "working_directory":null
+                   }
+                ]
+             }
+          ]
+       }
+    ]
+ }
